@@ -1,0 +1,18 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    &_img{
+        width: 60%;
+        height: 400px;
+        border-radius: 20px;
+    }
+    &_texte{
+        width: 90%;
+        margin-top: 50px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 25px;
+    }
+}

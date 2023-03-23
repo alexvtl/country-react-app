@@ -1,0 +1,39 @@
+
+.Nav{
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 10% 0 0 ;
+    align-self: flex-end;
+    color: white;
+    gap: 20px;
+        &_li{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        
+        &:hover{
+            text-decoration: none;
+        }
+    }
+}
+
+.Active{
+    position: relative;
+    &::before{
+        content: "";
+        height: 3px;
+        background: brown;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        animation: anim 3s;
+    }
+}
+
+@keyframes anim {
+    0%{transform: scaleX(0)}
+    100%{transform: scaleX(1)}
+}
